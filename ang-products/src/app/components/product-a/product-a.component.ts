@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   template:`
   <p>New Product A !</p>
   `,
-  styleUrls: ['./product-a.component.css']
- 
+  // styleUrls: ['./product-a.component.css']
+  styles:[`
+  p{
+    color:orange;
+  }
+  `]
 })
 export class ProductAComponent implements OnInit {
 

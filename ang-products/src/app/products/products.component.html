@@ -1,5 +1,7 @@
 <div class="container border border-primary mt-2">
     <h2>This is products Component</h2>
+    <button type="button" class="btn btn-primary" (click)="showDellProducts()">Show Dell Products</button>
+
     <div class="row" *ngIf="availableProducts">
 
         <div class="col-4">
@@ -7,7 +9,7 @@
 
         </div>
         <div class="col-4">
-            <div app-product-b></div>
+            <div *ngIf="dellProducts" app-product-b></div>
 
         </div>
         <div class="col-4">

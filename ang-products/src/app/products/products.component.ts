@@ -8,4 +8,13 @@ styleUrls:['./products.component.css']
 })
 export class ProductsComponent{
     title='Product Details';
+    availableProducts=false;
+    ngOnInit(){
+       this.checkAvailability();
+}
+    checkAvailability(){
+        this.availableProducts=navigator.userAgent.indexOf("Chrome") !== -1;
+
+    }
+
 }

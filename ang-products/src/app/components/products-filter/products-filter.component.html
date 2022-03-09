@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h1>Filter by Price</h1>
+            <button class="btn btn-primary" (click)="showWindowsOnly()">windows only </button>
+            <button class="btn btn-secondary" (click)="showMacOnly()">MAC only </button>
+
+
+        </div>
+        <div class="col-8">
+
+            <div class="row">
+                <div *ngFor="let windows of WindowsProducts" class="col-4">
+                    <div *ngIf="isWindows" class="card">
+                        <img class="card-img-top" [src]="windows.url" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{windows.name}}</h5>
+                            <h6 class="card-title">{{windows.price}}</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div *ngFor="let mac of MacProducts" class="col-4">
+                    <div *ngIf="isMac" class="card">
+                        <img class="card-img-top" [src]="mac.url" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{mac.name}}</h5>
+                            <h6 class="card-title">{{mac.price}}</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

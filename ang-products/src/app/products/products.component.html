@@ -1,26 +1,4 @@
-<div class="container border border-primary mt-2">
-    <h2>This is products Component</h2>
-
-    <button type="button" class="btn btn-primary" (click)="showDellProducts()">Show Dell Products</button>
-
-    <input type="text" class="form-control mt-2" [(ngModel)]="title">
-    <p>{{title}}</p>
-
-    <div class="row" *ngIf="availableProducts">
-
-        <div class="col-4">
-            <app-product-a></app-product-a>
-
-        </div>
-        <div class="col-4">
-            <div *ngIf="dellProducts" app-product-b></div>
-
-        </div>
-        <div class="col-4">
-            <div class="app-product-c"></div>
-
-        </div>
-
-    </div>
+<div class="container mt-2">
+    <app-products-filter></app-products-filter>
 
 </div>

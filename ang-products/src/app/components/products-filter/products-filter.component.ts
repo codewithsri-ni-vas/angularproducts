@@ -13,19 +13,24 @@ export class ProductsFilterComponent implements OnInit {
       "id": 101,
       "name": "Acer laptop",
       "price": 300,
-      "url": 'https://m.media-amazon.com/images/I/71233PTgAjL._AC_SX679_.jpg'
+      "url": 'https://m.media-amazon.com/images/I/71233PTgAjL._AC_SX679_.jpg',
+      "isavailable":false
     },
     {
       "id": 102,
       "name": " Lenovo laptop",
       "price": 350,
-      "url": 'https://m.media-amazon.com/images/I/71hhgeQCrOL._AC_SX679_.jpg'
+      "url": 'https://m.media-amazon.com/images/I/71hhgeQCrOL._AC_SX679_.jpg',
+      "isavailable":true
+
     },
     {
       "id": 103,
       "name": "Dell laptop",
       "price": 400,
-      "url": 'https://m.media-amazon.com/images/I/710QdRZmrhL._AC_SX679_.jpg'
+      "url": 'https://m.media-amazon.com/images/I/710QdRZmrhL._AC_SX679_.jpg',
+      "isavailable":true
+
     },
   ]
  MacProducts = [

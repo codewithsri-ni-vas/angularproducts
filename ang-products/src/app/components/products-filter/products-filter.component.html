@@ -16,7 +16,12 @@
                         <div class="card-body">
                             <h5 class="card-title">{{windows.name}}</h5>
                             <h6 class="card-title">{{windows.price}}</h6>
+                            status-
+                            <p *ngIf="windows.isavailable  else notavailable">Available</p>
 
+                            <ng-template #notavailable>
+                                Product Not available
+                            </ng-template>
                         </div>
                     </div>
                 </div>

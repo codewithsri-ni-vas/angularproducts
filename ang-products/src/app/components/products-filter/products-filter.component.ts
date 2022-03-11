@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsFilterComponent implements OnInit {
   isWindows=true;
   isMac=true;
+   condition='old';
+
   WindowsProducts = [
     {
       "id": 101,
@@ -55,7 +57,9 @@ export class ProductsFilterComponent implements OnInit {
     this.isMac=false;
   }
   showMacOnly(){
-this.isWindows=false;
+  this.isWindows=false;
   }
-  
+  showNew(){
+    this.condition='new';
+  }
 }

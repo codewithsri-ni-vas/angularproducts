@@ -2,8 +2,10 @@
     <div class="row">
         <div class="col-4">
             <h1>Filter by Price</h1>
-            <button class="btn btn-primary" (click)="showWindowsOnly()">windows only </button>
-            <button class="btn btn-secondary" (click)="showMacOnly()">MAC only </button>
+            <button class="btn btn-primary mt-2" (click)="showWindowsOnly()">windows only </button><br>
+            <button class="btn btn-secondary mt-2" (click)="showMacOnly()">MAC only </button><br>
+            <button class="btn btn-warning mt-2" (click)="showNew()">showNew </button><br>
+
 
 
         </div>
@@ -16,12 +18,9 @@
                         <div class="card-body">
                             <h5 class="card-title">{{windows.name}}</h5>
                             <h6 class="card-title">{{windows.price}}</h6>
-                            status-
-                            <p *ngIf="windows.isavailable  else notavailable">Available</p>
+                            <p [ngClass]="{'new':condition==='new','old':condition==='old'}">{{condition}}</p>
 
-                            <ng-template #notavailable>
-                                Product Not available
-                            </ng-template>
+
                         </div>
                     </div>
                 </div>
@@ -31,6 +30,8 @@
                         <div class="card-body">
                             <h5 class="card-title">{{mac.name}}</h5>
                             <h6 class="card-title">{{mac.price}}</h6>
+
+                            <p [ngStyle]="{'background-color':condition ==='new' ? 'red':'green'}">{{condition}}</p>
 
                         </div>
                     </div>

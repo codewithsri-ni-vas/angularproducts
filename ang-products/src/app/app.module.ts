@@ -9,6 +9,7 @@ import { ProductAComponent } from './components/product-a/product-a.component';
 import { ProductBComponent } from './components/product-b/product-b.component';
 import { ProductCComponent } from './components/product-c/product-c.component';
 import { ProductsFilterComponent } from './components/products-filter/products-filter.component';
+import { BrandDirective } from './brand.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProductsFilterComponent } from './components/products-filter/products-f
     ProductAComponent,
     ProductBComponent,
     ProductCComponent,
-    ProductsFilterComponent
+    ProductsFilterComponent,
+    BrandDirective
   ],
   imports: [
     BrowserModule,

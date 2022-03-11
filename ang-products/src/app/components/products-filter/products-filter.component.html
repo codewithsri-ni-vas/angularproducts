@@ -19,7 +19,7 @@
                             <h5 class="card-title">{{windows.name}}</h5>
                             <h6 class="card-title">{{windows.price}}</h6>
                             <p [ngClass]="{'new':condition==='new','old':condition==='old'}">{{condition}}</p>
-
+                            <button class="btn btn-warning" appBrand>Show Details</button>
 
                         </div>
                     </div>
@@ -32,6 +32,7 @@
                             <h6 class="card-title">{{mac.price}}</h6>
 
                             <p [ngStyle]="{'background-color':condition ==='new' ? 'red':'green'}">{{condition}}</p>
+                            <button class="btn btn-warning" appBrand>Show Details</button>
 
                         </div>
                     </div>
